@@ -22,7 +22,7 @@ public class Demo{
   }
    return outcome + "}";
   }
-  public static int[][] create2dArray(int rows, int cols, int maxValue){
+  public static int[][] create2DArray(int rows, int cols, int maxValue){
     int[][] array = new int [rows][cols];
     for(int i = 0; i < rows; i++){
       for(int j = 0; j < cols; j++){
@@ -31,7 +31,7 @@ public class Demo{
     }
     return array;
   }
-  public static int[][] create2dArrayRandomized(int rows, int cols, int maxValue){
+  public static int[][] create2DArrayRandomized(int rows, int cols, int maxValue){
     int[][]array = new int [rows][];
     for(int i = 0; i < rows; i++){
       int c = (int)(Math.round(Math.random() * maxValue));
@@ -48,8 +48,8 @@ public class Demo{
       int input = Integer.parseInt(args[0]);
      printLoop(input);
      // tests for new methods
-     //System.out.println(arrayDeepToString(create2dArray(3,4,4)));
-     //System.out.println(arrayDeepToString(create2dArrayRandomized(3,4,5)));
+     //System.out.println(arrayDeepToString(create2DArray(3,4,4)));
+     //System.out.println(arrayDeepToString(create2DArrayRandomized(3,4,5)));
   }
   }
   }
